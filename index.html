@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .ani {
+        color: aqua;
+        background-color: red;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        padding: 80px;
+        margin: 200px auto;
+        font-size: 200%;
+        text-align: center;
+        animation: bounce 1s infinite;
+      }
+
+      .tray {
+        background-color: blue;
+        border-radius: 20%;
+        height: 10px;
+        width: 25vw;
+        position: absolute;
+        bottom: 30%;
+        left: 38%;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-50px);
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div class="ani">Ball</div>
+    <div class="tray"></div>
+  </body>
+</html>
